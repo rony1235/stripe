@@ -1,12 +1,10 @@
-const stripe = require("stripe")(
-  "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"
-);
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
     try {
       // Create Checkout Sessions from body params.
-      const amount = 20;
+      const amount = 5000;
       const session = await stripe.checkout.sessions.create({
         line_items: [
           {
