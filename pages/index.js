@@ -4,7 +4,7 @@ import { loadStripe } from "@stripe/stripe-js";
 // Make sure to call `loadStripe` outside of a component’s render to avoid
 // recreating the `Stripe` object on every render.
 const stripePromise = loadStripe(
-  "pk_test_51JirpHE2so6yJwQvGWRfMUaPnmwFgJJsPR779lJcHFY58PPYPIB0Jf1JtIXJpcpB1WoMd6zOPhdJPsWRqXBuCMqT00DjWy7Yau"
+  "pk_live_51JirpHE2so6yJwQvpeJbPoTWCmZzi6YPm8v9EaP1sg8FZccc4FPROANVj3U3gL0ZwL1KFkeouuXmVqGf0Lvid9XI00bQ0AkzzN"
 );
 export default function PreviewPage() {
   React.useEffect(() => {
@@ -31,7 +31,7 @@ export default function PreviewPage() {
           />
           <div class="description">
             <h3>Stubborn Attachments</h3>
-            <h5>$20.00</h5>
+            <h5>$5000.00</h5>
           </div>
         </div>
         <button type="submit" role="link">

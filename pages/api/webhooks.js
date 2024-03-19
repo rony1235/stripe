@@ -3,7 +3,7 @@ import { buffer } from "micro";
 import Cors from "micro-cors";
 
 const stripe = new Stripe(
-  "sk_test_51JirpHE2so6yJwQvVpTfDZb0sdN2V7lUdG2mkrbi17rdKYrutZZiDC6ZmtRk6dO7VniDfsJNsTQcmF3LKjDX2I3e00VHPyBY76"
+  "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"
 );
 
 const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
